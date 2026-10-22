@@ -1,5 +1,7 @@
 # 🛵 MotoFleet Core
 
+![Painel de monitoramento MotoFleet](src/assets/motofleet.png)
+
 **Plataforma distribuída de telemetria para frotas de motocicletas, desenvolvida com C# e .NET 10.**
 
 O **MotoFleet Core** é um projeto de backend focado no processamento de telemetria IoT, utilizando mensageria assíncrona, processamento em background, cache distribuído e persistência relacional.
