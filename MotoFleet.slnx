@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MotoFleet.Api/MotoFleet.Api.csproj" />
+    <Project Path="src/MotoFleet.Application/MotoFleet.Application.csproj" />
+    <Project Path="src/MotoFleet.Domain/MotoFleet.Domain.csproj" />
+    <Project Path="src/MotoFleet.Infrastructure/MotoFleet.Infrastructure.csproj" />
+    <Project Path="src/MotoFleet.Simulator/MotoFleet.Simulator.csproj" />
+    <Project Path="src/MotoFleet.TelemetryWorker/MotoFleet.TelemetryWorker.csproj" />
+    <Project Path="src/MotoFleet.Web/MotoFleet.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MotoFleet.UnitTests/MotoFleet.UnitTests.csproj" />
+  </Folder>
+</Solution>

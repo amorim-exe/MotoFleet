@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: motofleet_sql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Password123!
+    ports:
+      - "1433:1433"
+    networks:
+      - motofleet-net
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: motofleet_rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672" # Painel web: guest / guest
+    networks:
+      - motofleet-net
+
+  redis:
+    image: redis:alpine
+    container_name: motofleet_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - motofleet-net
+
+networks:
+  motofleet-net:
+    driver: bridge

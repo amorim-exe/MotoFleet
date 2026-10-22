@@ -1,0 +1,16 @@
+# .NET build output
+**/bin/
+**/obj/
+.vs/
+*.user
+
+# Node.js dependencies and build output
+**/node_modules/
+src/MotoFleet.Web/wwwroot/assets/
+src/MotoFleet.Web/wwwroot/index.html
+src/MotoFleet.Web/tsconfig.tsbuildinfo
+
+# Local environment files
+.env
+.env.*
+!.env.example
